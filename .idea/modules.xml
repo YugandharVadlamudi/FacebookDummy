@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FacebookDummy.iml" filepath="$PROJECT_DIR$/FacebookDummy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dummyhelloworldapp/dummyhelloworldapp.iml" filepath="$PROJECT_DIR$/dummyhelloworldapp/dummyhelloworldapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookoriginalapp/facebookoriginalapp.iml" filepath="$PROJECT_DIR$/facebookoriginalapp/facebookoriginalapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobiledataspeedapp/mobiledataspeedapp.iml" filepath="$PROJECT_DIR$/mobiledataspeedapp/mobiledataspeedapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parallaxviewpagerapplication/parallaxviewpagerapplication.iml" filepath="$PROJECT_DIR$/parallaxviewpagerapplication/parallaxviewpagerapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerapp/viewpagerapp.iml" filepath="$PROJECT_DIR$/viewpagerapp/viewpagerapp.iml" />
+    </modules>
+  </component>
+</project>

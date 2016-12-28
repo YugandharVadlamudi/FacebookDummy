@@ -1,0 +1,1 @@
+include ':app', ':facebookoriginalapp', ':mobiledataspeedapp', ':viewpagerapp', ':parallaxviewpagerapplication', ':dummyhelloworldapp'

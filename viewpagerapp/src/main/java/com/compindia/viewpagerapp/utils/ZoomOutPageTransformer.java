@@ -1,0 +1,41 @@
+package com.compindia.viewpagerapp.utils;
+
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.View;
+
+/**
+ * Created by Kiran on 09-08-2016.
+ */
+public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
+    private final static float MIN_SCALE = 0.85f;
+    private final static float MIN_ALPHA = 0.5f;
+    private String TAG = ZoomOutPageTransformer.class.getSimpleName();
+
+    @Override
+    public void transformPage(View page, float position) {
+        Log.d(TAG, "transformPage: page->" + page + "\nposition->" + position);
+        int pageWidth = page.getWidth();
+        int pageHeight = page.getHeight();
+        if (position < -1) {
+            Log.d(TAG, "transformPage: if->");
+            page.setAlpha(0);
+        } else if (position <= 1) {
+            Log.d(TAG, "transformPage: elseIF->");
+            float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
+            float vertMargin = pageHeight * (1 - scaleFactor) / 2;
+            float horzMargin = pageWidth * (1 - scaleFactor) / 2;
+            if (position < 0) {
+                page.setTranslationX(horzMargin - vertMargin / 2);
+            } else {
+                page.setTranslationX(-horzMargin + vertMargin / 2);
+            }
+            page.setScaleX(scaleFactor);
+            page.setScaleY(scaleFactor);
+            page.setAlpha(MIN_ALPHA + (scaleFactor - MIN_SCALE) / (1 - MIN_SCALE) * (1 - MIN_ALPHA));
+        } else {
+            Log.d(TAG, "transformPage: else->");
+                page.setAlpha(0);
+        }
+    }
+}

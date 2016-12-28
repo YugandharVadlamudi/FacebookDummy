@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ViewPager App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="text1">
+        <item>Screen 1</item>
+        <item>Screen 2</item>
+        <item>Screen 3</item>
+    </string-array>
+    <string-array name="text2">
+        <item>Make it simple, But Significant</item>
+        <item>Do small things with great heart</item>
+        <item>Silence is better than bullshit</item>
+    </string-array>
+    <string-array name="text3">
+        <item>Simple is the ultimate sophistication</item>
+        <item>Success doesn\'t come to you. You go to it</item>
+        <item>Enjoy today</item>
+    </string-array>
+</resources>
